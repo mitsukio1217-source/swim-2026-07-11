@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ホーム設定</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>⚙ ホーム設定</h1>
+
+</header>
+
+<main>
+
+<div class="card">
+
+<h2>🏊 今日の練習</h2>
+
+<input
+type="text"
+id="practice"
+placeholder="17:00～19:30">
+
+</div>
+
+<div class="card">
+
+<h2>💬 今日の一言</h2>
+
+<textarea
+id="message"
+rows="4"
+placeholder="今日意識すること"></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 今日の目標</h2>
+
+<input type="text" id="goal1" placeholder="目標①">
+<input type="text" id="goal2" placeholder="目標②">
+<input type="text" id="goal3" placeholder="目標③">
+<input type="text" id="goal4" placeholder="目標④">
+<input type="text" id="goal5" placeholder="目標⑤">
+
+</div>
+
+<div class="button-area">
+
+<button onclick="saveData()">
+保存内容を確認
+</button>
+
+<button onclick="location.href='home.html'">
+ホームへ戻る
+</button>
+
+</div>
+
+</main>
+
+<script src="js/setting.js"></script>
+
+</body>
+
+</html>
