@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>練習記録</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>📝 練習記録</h1>
+
+    <nav class="menu">
+
+        <a href="home.html">🏠 ホーム</a>
+        <a href="practice.html">📝 練習記録</a>
+        <a href="time.html">⏱️ タイム管理</a>
+        <a href="setting.html">⚙ 設定</a>
+
+    </nav>
+
+</header>
+<main>
+
+<div class="card">
+
+<input type="date" id="date">
+
+<input type="text" id="time" placeholder="練習時間">
+
+<input type="text" id="theme" placeholder="今日のテーマ">
+
+<textarea id="practice"></textarea>
+
+<textarea id="good"></textarea>
+
+<textarea id="bad"></textarea>
+
+<button onclick="savePractice()">
+
+保存
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>記録一覧</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>日付</th>
+
+<th>時間</th>
+
+<th>テーマ</th>
+
+</tr>
+
+</thead>
+
+<tbody id="practiceTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="js/practice.js"></script>
+
+</main>
+<div class="button-area">
+
+    <button onclick="location.href='home.html'">
+
+        🏠 ホームへ戻る
+
+    </button>
+
+</div>
+
+</body>
+
+</html>
