@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水泳成長管理アプリ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+
+    <h1>🏊 水泳成長管理アプリ</h1>
+
+    <nav>
+
+        <a href="home.html">🏠 ホーム</a>
+
+        <a href="practice.html">📝 練習記録</a>
+
+        <a href="time.html">⏱️ タイム管理</a>
+
+        <a href="setting.html">⚙ 設定</a>
+
+    </nav>
+
+    <p id="today"></p>
+
+</header>
+<main>
+
+    <!-- 今日の目標 -->
+    <section class="card">
+        <h2>🎯 今日の目標</h2>
+
+        <ul id="goalList">
+            <ul id="goalList">
+
+            <li><input type="checkbox"><span id="g1"></span></li>
+
+            <li><input type="checkbox"><span id="g2"></span></li>
+
+            <li><input type="checkbox"><span id="g3"></span></li>
+
+            <li><input type="checkbox"><span id="g4"></span></li>
+
+           <li><input type="checkbox"><span id="g5"></span></li>
+
+</ul>
+        </ul>
+    </section>
+
+    <!-- 練習予定 -->
+    <section class="card">
+        <h2>🏊 今日の練習</h2>
+        <p id="practiceText"></p>
+    </section>
+
+    <!-- 今日の一言 -->
+    <section class="card">
+        <h2>💡 今日の一言</h2>
+        <p id="message"></p>
+    </section>
+
+    <!-- 今日の達成率 -->
+    <section class="card">
+
+        <h2>📈 今日の達成率</h2>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <h3 id="percent">0%</h3>
+
+    </section>
+
+<div style="text-align:center;margin-top:30px;">
+
+<button onclick="location.href='setting.html'">
+
+⚙ ホーム設定
+
+</button>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
