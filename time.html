@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>タイム管理</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>⏱️ タイム管理</h1>
+
+    <nav class="menu">
+
+        <a href="home.html">🏠 ホーム</a>
+        <a href="practice.html">📝 練習記録</a>
+        <a href="time.html">⏱️ タイム管理</a>
+        <a href="setting.html">⚙ 設定</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+<div class="card">
+
+<input type="date" id="date">
+
+<select id="style">
+
+<option>自由形</option>
+
+<option>背泳ぎ</option>
+
+<option>平泳ぎ</option>
+
+<option>バタフライ</option>
+
+<option>個人メドレー</option>
+
+</select>
+
+<select id="distance">
+
+<option>50m</option>
+
+<option>100m</option>
+
+<option>200m</option>
+
+<option>400m</option>
+
+</select>
+
+<input type="text" id="record" placeholder="タイム">
+
+<input type="text" id="meet" placeholder="大会名">
+
+<button onclick="saveTime()">
+
+保存
+
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="card">
+
+    <h2>記録一覧</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>日付</th>
+                <th>種目</th>
+                <th>距離</th>
+                <th>タイム</th>
+                <th>大会名</th>
+                <th>編集</th>
+                <th>削除</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="timeTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/time.js"></script>
+
+</main>
+<div class="button-area">
+
+    <button onclick="location.href='home.html'">
+
+        🏠 ホームへ戻る
+
+    </button>
+
+</div>
+
+</body>
+
+</html>
